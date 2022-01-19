@@ -1,0 +1,18 @@
+services:
+  api:
+    build: WeatherApp
+    ports:
+      - "8080:80"
+
+  webapp:
+    build: front-end
+    ports:
+      - "3000:80"
+
+  db:
+    image: "mcr.microsoft.com/mssql/server"
+    volumes:
+      - ./data:/var/opt/mssql/data
+    environment:
+      SA_PASSWORD: "Pw12345678"
+      ACCEPT_EULA: "Y"

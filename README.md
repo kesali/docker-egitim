@@ -1,1 +1,1 @@
-# docker-egitim
+Bu repository ile docker eğitim serisinde gelistirdiğimiz uygulamanın kaynak kodlarına ulaşabilirsiniz.
